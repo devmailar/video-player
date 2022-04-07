@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: rgb(219, 219, 219);
+  font-size: 100px;
+  margin-top: 10rem;
+  margin-left: 10rem;
+  width: 60rem;
+}
+
+span {
+  color: #aefeff;
+}
+
+header {
+  display: flex;
+  background: #072227;
+  height: 80vh;
+}
+
+section {
+  display: flex;
+  background: #35858b;
+  height: 50vh;
+}
+
+footer {
+  display: flex;
+  background: #4fbdba;
+  height: 80vh;
+}
+
+.video {
+  width: 100%;
+}
+
+.c-video {
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+  overflow: hidden;
+}
+
+.c-video:hover .controls {
+  transform: translateY(0);
+  transition: all 0.2s ease-in;
+}
+
+.controls {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  background: rgb(0, 0, 0);
+  transform: translateY(100%) translateY(-10px);
+  transition: all 0.4s ease-in;
+}
+
+.buttons {
+  padding: 10px;
+}
+
+.buttons button {
+  background: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.buttons button:before {
+  content: "\f144";
+  font-family: "Font Awesome 5 Free";
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  font-size: 28px;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.buttons button.play::after {
+  content: "\f114";
+}
+
+.buttons button.pause::before {
+  content: "\f28b";
+}
+
+.orange-bar {
+  height: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(65, 65, 65);
+}
+
+.orange-juice {
+  height: 10px;
+  background-color: rgb(58, 98, 231);
+}
